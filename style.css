@@ -50,3 +50,37 @@
 .border-left {
     border-left: 2px solid #000000;
 }
+
+.number-input {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 5vmin;
+    text-align: center;
+    border: none;
+}
+
+/* Hide spinners (arrows) on the number inputs */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=number]:invalid {
+    background: rgba(225, 0, 0, 0.8);
+}
+
+.number-set {
+    color: rgb(0, 0, 190);
+}
+
+#solve {
+    margin: 0 45%;
+    padding: 5px 10px;
+}
